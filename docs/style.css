@@ -13,11 +13,14 @@
   --light: #f4f5f8;
 }
 
+* { transition: 0.2s; }
+
 body {
   color: var(--text);
   background-color: var(--wall);
   text-align: center;
   font-family: monospace;
+  font-size: 2vmax;
 }
 
 a {
@@ -26,4 +29,28 @@ a {
 
 span#heart {
   color: var(--danger);
+}
+
+#idSpan {
+  color: var(--primary);
+}
+
+#generateButton {
+  padding: 3%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 3vmax;
+  background-color: var(--success);
+  border-radius: 10px;
+  transition: 0.1s;
+}
+
+#generateButton:hover {
+  box-shadow: var(--light) 0px 0px 10px;
+  transition: 0.1s;
+}
+
+#generateButton:active {
+  background-color: var(--light);
+  transition: 0.2s;
 }
