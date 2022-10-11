@@ -3,30 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>template-web</title>
+  <title>id-auto_increment</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <h1>
-      <a href="https://github.com/dudushy/template-web" target="_blank">template-web</a>
+      <a href="https://github.com/dudushy/id-auto_increment" target="_blank">id-auto_increment</a>
     </h1>
   </header>
   <hr>
 
   <div id="content">
-    <h1>Hello World!</h1>
+    <h1>ID: <span id="idSpan">0</span></h1>
 
-    <button style="background-color: var(--primary)">primary</button>
-    <button style="background-color: var(--secondary)">secondary</button>
-    <button style="background-color: var(--tertiary)">tertiary</button>
-    <button style="background-color: var(--success)">success</button>
-    <button style="background-color: var(--warning)">warning</button>
-    <button style="background-color: var(--danger)">danger</button>
-    <button style="background-color: var(--dark)">dark</button>
-    <button style="background-color: var(--medium)">medium</button>
-    <button style="background-color: var(--light)">light</button>
+    <button id="generateButton" onclick="generateId()">generate new</button>
   </div>
 
   <hr>
